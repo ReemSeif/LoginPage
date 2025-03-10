@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tunes_app/pages/tunesView.dart';
+import 'package:tunes_app/pages/Login.dart';
+
 
 void main() {
   runApp(const tune());
@@ -12,7 +13,7 @@ class tune extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Tunesview(),
+      home: Login(),
     );
   }
 }
