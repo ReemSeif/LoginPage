@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tunes_app/pages/Login.dart';
+import 'package:tunes_app/pages/chats.dart';
 
 
 void main() {
@@ -13,7 +14,7 @@ class tune extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: Chats(),
     );
   }
 }
