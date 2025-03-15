@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:tunes_app/models/productsModel.dart';
+
 
 class Person extends StatelessWidget {
-  const Person({super.key});
-
+   Person({super.key ,required this.product});
+ Product product;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -15,7 +17,7 @@ class Person extends StatelessWidget {
               padding: EdgeInsets.only(left: 10),
               child: CircleAvatar(
                 radius: 40,
-                backgroundImage: AssetImage('Images/R.png'),
+                backgroundImage: NetworkImage(product.thumbnail),
                 
               ),
             ),
@@ -28,7 +30,10 @@ class Person extends StatelessWidget {
                      ),
            ),] 
           ),
-          Text('reem seif'),
+          Text(product.title , style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
+          ),),
          
         ],
       );
